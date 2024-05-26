@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+     <!-- 
+        div  (줄바꿈 o)
+        <div>는 <p>를 포함할 수 있다.
+        태그는 body 문서 안에서 각 영역의 세션을 구분 정의 한다.
+         : 구역을 나누는 태그. 가로줄 전체를 다 차지. 너비가 100%
+       
+      -->
+
+      <!-- 
+        span  (줄바꿈 X)
+         일반적으로 텍스트에 색칠, 크기, 좌우간격을 조절하는데 사용된다.
+          : css속성 inline 이 자동으로 적용되어있다.
+       -->
+
+       <!-- 
+        ​<p> 
+        <p>는 <div>를 포함할 수 없다.
+         문단(paragraph) 텍스트 절을 기재할때 사용된다.
+        : div랑 거의 같다고 보면 된다. div는 세션 나누기가 목적이고, p는 글자 표현이 목적이다.
+        -->
+
+        <!-- 
+         줄바꿈 display 요소
+           Display 요소는 두개의 특징을 가진다
+         Block-level Element : 
+              새로운 라인에서 Block을 시작한다. Block간에는 겹치는 일이 없다.
+             왼쪽에서 오른쪽으로 하나의 가로 영역(Block) 전체를 차지하는 태그들
+             <address> <article> <aside> <blockquote> <canvas> <dd> <div> <dl> <dt> <fieldset>
+             <figcaption> <figure> <footer> <form> <h1>-<h6> <header> <hr> <li> <main> <nav>
+             <noscript> <ol> <p> <pre> <section> <table> <tfoot> <ul> <video>
+        Inline-level Element :
+             새로운 라인에서 시작하지 않는다.
+             요소의 너비도 해당 라인 전체가 아닌 해당 HTML 요소의 내용(content)만큼만 차지한다.
+             자기의 고유 영역이 없이 그저 자신이 둘러싸고 있는 내용들의 양에 따라 길이가 결정되어 지는 태그들
+             <a> <abbr> <acronym> <b> <dbo> <big> <br> <button> <cite> <code> <dfn> <em> <i> <img> <input>
+             <kdb> <label> <map> <object> <output> <q> <samp> <script> <select> <small> <span> <strong> <sub> 
+            <sup> <textarea> <time> <tt> <var>
+             -->
+
+
+                 HTML 주요태그
+                 <div></div>태그는 한줄씩 출력 (줄바꿈)
+                 <span></span> 태그는 컨텐츠의 공간만큼 출력
+                 <img src="" alt=""> 이미지 태그 닫는태그X 이미지 삽입 가능
+                 <a href="주소"></a> a 태그에 href 속성을 사용해 하이퍼링크 태그
+                 <ul></ul> 순서가 없는 리스트 보통 <li></li>와 같이씀
+                 <li></li> 리스트로 출력
+                 <ol></ol>순서가 있는 리스트<li></li>와 같이씀
+                 <input type="taxt">텍스트를 입력할수 있는 태그
+                 <input type="radio" name="option" 여러 개의 선택중 하나 선택, name을 준다면 서로 다른 radio 가됨
+                 <inputtype="ckeckbox"> 체크박스 여러 개 선택 가능 checked 옵션을 쓰면 이미 체크되어 있음
+                 <textarea name="" id=""></textarea>줄바꿈이 가능한 텍스트 박스
+                 <button></button> 버튼박스
+
+
+
+    <!-- 
+        시멘틱 요소
+     시맨틱이란 의미가 있는 의미론적인 이라고 해석할수 있다. 즉 의미를 가진 요소를 사용하는 방식을 말한다. 시맨틱 요소는 네이버,구글과 같은 검색엔진이 웹페이지를 방문할 때 시맨틱 요소를 중요한 키워드로 고려하여 검색 결과가 상위에 노출이 결정될수 있게 해주고 개발자에 입장에서 여러 개발자들이 시맨틱요소를 사용하여 보다 코드 블록을 쉽고 편리하게 찾을 수 있고 의미도 쉽게 알수 있기 때문에 좋다.
+         시맨틱의 주요 종류
+<article> : 독립적이고 자체 포함된 콘텐츠를 지정합니다.
+<aside> : 본문의 주요 부분을 표시하고 남은 부분을 설명하는 요소입니다. 특별한 일이 아니면 사이드바나 광고창 등 중요하지 않은 부분에 사용됩니다.
+<footer> : 일반적으로 페이지나 해당 파트의 가장 아랫부분에 위치하며, 사이트의 라이선스, 주소, 연락처 등을 넣을 때 사용합니다.
+<header> : 일반적으로 페이지나 해당 섹션의 가장 윗부분에 위치하며, 사이트의 제목이 보통 들어갑니다. 선택적으로 상단바나 검색창 등이 안에 들어갈 수 있습니다.
+<nav> : 내비게이션(navigation)의 약자로, 일반적으로 상단바 등 사이트를 안내하는 요소에 사용됩니다. 보통은 안에 <ul>을 넣어 목록 형태로 사용합니다.​​
+<main> : 문서의 주된 콘텐츠를 표시합니다.
+
+                  -->
+</body>
+</html>
