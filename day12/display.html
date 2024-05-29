@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            /* text-align: center;   line-height:    이것보단 flex 를 사용 */
+            text-align: center;
+            /* 흔히 행간을 설정하는 속성으로 알고있지만 
+            사실 줄 높이를 설정하느 속성이다
+            부모 컨텐츠의 높이와 같은값을 주면 수직방향으로 가운데정렬 된다 */
+            
+            line-height: 200px;
+            /* 새로 정렬로 검색하면 나오긴하는데 */
+            /* 테이블에서만 쓸수있는 속성이라 활용 불가능 */
+            /*     vertical-align: middle;    */
+            /* 텍스트첫줄중앙으로 위치할수있지만 중간줄 중앙으로X */
+            
+        }
+        .box-block {
+            display: block;
+        }
+        .box-inline {
+            display: inline;
+        }
+        .box-inlineblock {
+            display: inline-block;
+        }
+        .box-none {
+            /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+            /* 투명하지만 자리유지 */
+            display: none;
+            /* 투명도 조절  1=100%  0=0%   0.5 */
+
+            /* visibility: hidden; 
+                 display: none 과 비슷하게 컨텐츠를 안보이게 만들어준다/
+                 실체는 존재하되, 투명하게 만들어주는 기능.
+                 display: none 은 실체가 없게 만들어버린다. */
+            /* 투명하고 자리도X */
+
+            /* 
+            opacity: 0; 
+            위 속성과 같은 작동을 하지만 
+            투명도는 0 부터 1 (100%)까지 값이 연결되기 때문에
+            애니 메이션 효과 부여 가능
+            visibility: hidden; 을 사용할 이유가 없다.
+            */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- ctrl + home 맨앞으로 ctrl + end 맨뒤로  -->
+    <div>
+        <div class="box box-block">block</div>
+        <div class="box box-inline">inline</div>
+        <div class="box box-inlineblock">inline-block</div>
+        <div class="box box-none">none</div>
+    </div>
+    <!--  -->
+</body>
+</html>
