@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        접두
+        :first, last, nth ,nth-last
+
+        nth : 
+        nth-last : 
+
+        접미
+        : child, of-typy
+         child : 자식 (내가 몇번째 사직인지가 중요)
+         of- type : 
+     -->
+
+     <!-- 
+         반응 선택자
+         선택자 :active  -> 클릭중일때
+        선택자 :hover    ->마우스를 올렸을때
+      -->
+      <style>
+        .reaction-box{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .reaction-box:hover{
+            background-color: chartreuse;
+        }
+        .reaction-box:active{
+            background-color: chocolate;
+        }
+      </style>
+      <div class="reaction-box">
+        반응 선택자
+
+      </div>
+        <!-- 
+            checked   -
+         -->
+
+<style>
+    input:enabled{
+        background: blue;
+        color: white;
+    }
+    input:disabled{
+        background: black;
+    }
+    input:focus{
+        background: orange;
+    }
+</style>
+<h3>enabled</h3>
+<p>
+    <input type="text">
+</p>
+<h3>disabled</h3>
+<p>
+    입력 할 수 없는 상태로 만들기
+<input disabled="disabled">
+</p>
+
+
+<!-- 
+    링크 선택자
+    
+ -->
+ <a href=""></a>
+    </body>
+</html>
